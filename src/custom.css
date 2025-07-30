@@ -1,0 +1,26 @@
+@keyframes morph {
+  0% {
+    border-radius: 50% 50% 50% 50%;
+    transform: scale(1);
+  }
+  25% {
+    border-radius: 60% 40% 70% 50%;
+    transform: scale(1.05);
+  }
+  50% {
+    border-radius: 40% 60% 50% 70%;
+    transform: scale(1);
+  }
+  75% {
+    border-radius: 70% 50% 40% 60%;
+    transform: scale(1.05);
+  }
+  100% {
+    border-radius: 50% 50% 50% 50%;
+    transform: scale(1);
+  }
+}
+
+.animate-morph {
+  animation: morph 6s ease-in-out infinite;
+}
